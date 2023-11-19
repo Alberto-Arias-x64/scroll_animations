@@ -1,0 +1,20 @@
+header{
+    position: sticky;
+    top: 0;
+    animation-name: animation_header;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+    animation-timeline: scroll(root);
+    animation-range: 0 100px;
+}
+
+@keyframes animation_header {
+    to{
+        background-color: rgba(0, 0, 0, 0.267);
+        backdrop-filter: blur(10px);
+    }
+}
+
+main{
+    height: 300vh;
+}
