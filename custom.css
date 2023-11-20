@@ -6,6 +6,7 @@ header{
     animation-fill-mode: both;
     animation-timeline: scroll(root);
     animation-range: 0 100px;
+    z-index: 2;
 }
 
 @keyframes animation_header {
@@ -17,4 +18,21 @@ header{
 
 main{
     height: 300vh;
+}
+
+img{
+    animation: reveal linear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 30%;
+}
+
+@keyframes reveal {
+    from{
+        opacity: 0;
+        transform: scale(0.6) translate(0, 200px);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1) translate(0, 0);
+    }
 }
